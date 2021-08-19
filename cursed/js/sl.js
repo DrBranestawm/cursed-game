@@ -1,4 +1,8 @@
 /*
+  Cursed Boardgame v.4 
+  Updated by Blondeh
+  August 2021
+
   Cursed Boardgame Interactive NSFWCYOA
   Created by /u/chinesesilklanterns
   May 2020
@@ -93,7 +97,7 @@ playertoken.currentpos = 0;
 playertoken.lastrolled = 0;
 playertoken.lastselecteditem = 0;
 
-var minheight = 148;
+var minheight = 91;
 var minage = 16;
 
 var showtfeffect = false;
@@ -180,7 +184,7 @@ var nextscreen = function(oldscreen, newscreen) {
 	if(newscreen=='screen4')
 	{
 	populateboard();
-	showpopup("<img src='img/welcome.jpg' width=200 height=125 style=\"border:2px solid #000000; float:middle;\" /><br/>Welcome to <span style='color:lime'><s>Jumanji</s> Cursed Boardgame</span>, the greatest (and totally original) boardgame of all time! <br/><br/>Go ahead, <span style='color:pink'>roll the dice</span>, your game token will begin moving! Reach the end and win the game to escape - you'll get to keep whatever you win!<br/><br/>Oh, what fun we're going to have!<br/><br/><span style='color:yellow'><em>\"We all make choices, but in the end, our choices make us.\"</em></span>");
+	showpopup("<img src='img/welcome.jpg' width=200 height=125 style=\"border:2px solid #000000; float:middle;\" /><br/>Welcome to <span style='color:lime'> Cursed Boardgame</span>, the greatest (and totally original) boardgame of all time! <br/><br/>Go ahead, <span style='color:pink'>roll the dice</span>, your game token will begin moving! Reach the end and win the game to escape - you'll get to keep whatever you win!<br/><br/>Oh, what fun we're going to have!<br/><br/><span style='color:yellow'><em>\"We all make choices, but in the end, our choices make us.\"</em></span>");
 	}
 }
 
@@ -798,7 +802,7 @@ function ApplyEffect(seldat)
 			case "Shrinking": 
 			PrepareTF();
 			attribute="height"; 
-			playertoken.stats["height"] -= 4;
+			playertoken.stats["height"] -= 12;
 			playertoken.stats["height"] = playertoken.stats["height"]<minheight?minheight:playertoken.stats["height"];
 			break;
 			case "Ass Expansion": PrepareTF();attribute="ass size"; adjust_attrib(attribute,1); break;
@@ -832,11 +836,11 @@ function ApplyEffect(seldat)
 			case "Exhibitionist": PrepareTF();attribute="exhibitionist"; adjust_attrib(attribute,1); break;
 			case "Lewd Dreams": PrepareTF();attribute="lewd dreams"; adjust_attrib(attribute,1); break;
 			case "Age Regression": PrepareTF();attribute="age"; 
-			playertoken.stats["age"] -= 5;
+			playertoken.stats["age"] -= 2;
 			playertoken.stats["age"] = playertoken.stats["age"]<minage?minage:playertoken.stats["age"];
-			if(playertoken.stats["age"]<20)
+			if(playertoken.stats["age"]<18)
 			{
-				playertoken.stats["height"] -= 4;
+				playertoken.stats["height"] -= 24;
 				playertoken.stats["height"] = playertoken.stats["height"]<minheight?minheight:playertoken.stats["height"];
 			}
 			break;
@@ -858,8 +862,8 @@ function ApplyEffect(seldat)
 			case "Palette Swap": 
 			PrepareTF();
 			attribute=""; adjust_attrib("palette swap",1);
-			var hrc = ["Black","Blonde","Brown","Brunette","Gray","White","Pink","Red","Auburn"];
-			var eyc = ["Blue","Green","Dark brown","Brown","Hazel","Amber","Gray"];
+			var hrc = ["Black","Blonde","Brown","Brunette","Gray","White","Pink","Red","Auburn","Blue","Magenta"];
+			var eyc = ["Blue","Green","Dark brown","Brown","Hazel","Amber","Gray","Violet","Red","Black"];
 			playertoken.stats["hair color"] = hrc[Math.floor(Math.random() * hrc.length)];
 			playertoken.stats["eye color"] = eyc[Math.floor(Math.random() * eyc.length)];
 			extrastr += "<br/><br/>Your hair changes to a "+toLowerFirst(playertoken.stats["hair color"])+ " color, and your eyes shift to a shade of "+toLowerFirst(playertoken.stats["eye color"])+"! Hope you like your new look!";
@@ -867,7 +871,7 @@ function ApplyEffect(seldat)
 			case "Name Change": 
 			PrepareTF();
 			attribute=""; adjust_attrib("name change",1);
-			var femname = ["Jennifer","Jessica","Megan","Sarah","Samantha","Amanda","Nicole","Danielle","Sarah","Emily","Chloe"];
+			var femname = ["Jennifer","Jessica","Megan","Sarah","Samantha","Amanda","Nicole","Danielle","Sarah","Emily","Chloe","Brooke","Brittany","Fairess","Dawn"];
 			playertoken.stats["name"] = femname[Math.floor(Math.random() * femname.length)];
 			extrastr += "<br/><br/>Your name is now "+playertoken.stats["name"]+ " - you just know this instinctively. It feels strange to think of yourself by any other name.";
 			break;
@@ -1152,7 +1156,7 @@ function selectsandbox(ele)
 	+"Height (cm): <input type=number id=iheight value=180 min="+minheight+" max=200><br/>"
 	+"Gender: <select id=igender><option value=0>M</option> <option value=1>F</option></select><br/>"
 	+"Orientation: <select id=iori><option value=0>Prefers F</option> <option value=1>Prefers M</option><option value=2>Bisexual</option></select><br/>"
-	+"Hair Color: <input type=text id=ihairc value='Brown' maxlength=15 size=8><br/>"
+	+"Hair Color: <input type=text id=ihairc value='Blonde' maxlength=15 size=8><br/>"
 	+"Eye Color: <input type=text id=ieyec value='Hazel' maxlength=15 size=8><br/>"
 	+"Infinite Silver Coins: <input type=checkbox id=iinfsilver>"
 	+"Loaded Dice: <input type=checkbox id=iloaddice>";
