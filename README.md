@@ -1,4 +1,4 @@
-# pirate-fairy.github.io
+# chinesesilklanterns.github.io
 
 Cursed Boardgame Interactive NSFWCYOA
 Originally Created by /u/chinesesilklanterns
