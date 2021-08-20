@@ -129,7 +129,7 @@ position: relative;
 .startBtn {
 	width: 300px;
 	height: 107px;
-	background:url(../img/play_bg.png) no-repeat;	
+	/*background:url(../img/play_bg.png) no-repeat;*/	
 	cursor: default;
 	display: block;	
     color: #fff;
@@ -139,6 +139,10 @@ position: relative;
 	font-family: 'helios';
 	font-size: 60px;
 	color: #ffffff;
+}
+
+.startBtn:hover {
+    color: #39ff14;
 }
 
 .startBtn span{  z-index: 999;  position: relative;}

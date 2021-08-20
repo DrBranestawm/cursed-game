@@ -88,6 +88,8 @@ playertoken.stats = {
 "ditzy":0,
 "noisy":0,
 "denial":0,
+"headpats":0,
+"polycule":0,
 
 "palette swap":0,
 "name change":0
@@ -718,7 +720,7 @@ function ApplyEffect(seldat)
 						money += giveqty;
 					}		
 					giveitem(randitem.name,giveqty);						
-					showpopup("<u>Treasure Looted</u><br/><br/><span style='color:yellow'><em>\"Congratulations, you've cause for celebrations. May this loot live up to your crate expectations.\"</em></span><br/><br/><span style='float:right'>You open the trasure chest and obtained a reward! (automatically added into inventory)<br/><br/><span style='color:cyan'>Got Item: "+randitem.name+" x "+giveqty+"</span></span>","goodchest.jpg");
+					showpopup("<u>Treasure Looted</u><br/><br/><span style='color:yellow'><em>\"Congratulations, you've cause for celebrations. May this loot live up to your crate expectations.\"</em></span><br/><br/><span style='float:right'>You open the treasure chest and obtained a reward! (automatically added into inventory)<br/><br/><span style='color:cyan'>Got Item: "+randitem.name+" x "+giveqty+"</span></span>","goodchest.jpg");
 				
 				}
 			}
@@ -859,6 +861,9 @@ function ApplyEffect(seldat)
 			case "Enervation": PrepareTF();attribute="stamina"; adjust_attrib(attribute,-10); break;
 			case "Glasses": PrepareTF();attribute="eyesight"; adjust_attrib(attribute,-10); break;
 			case "Bad Luck": PrepareTF();attribute="luck"; adjust_attrib(attribute,-10); break;
+			case "Headpats": PrepareTF();attribute="headpats"; adjust_attrib(attribute,1); break;
+			case "Polycule": PrepareTF();attribute="polycule"; adjust_attrib(attribute,1); break;
+
 			case "Palette Swap": 
 			PrepareTF();
 			attribute=""; adjust_attrib("palette swap",1);
@@ -1271,6 +1276,8 @@ function stringify_player(verbose)
 		arr.push("ditzy");
 		arr.push("noisy");
 		arr.push("denial");
+		arr.push("headpats");
+		arr.push("polycule");
 		
 		arr.push("strength");
 		arr.push("stamina");

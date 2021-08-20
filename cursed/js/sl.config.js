@@ -50,7 +50,7 @@ var configAttribDescs = [
 {attribname: "strength", descs: ["Your limbs are slender and delicate. You might need help lifting more than a few pounds.","","You're pretty strong physically, your body is fit and well-toned.","You feel incredibly strong, your muscular form is chiseled and firm. You feel like you could lift hundreds of pounds effortlessly."]},
 {attribname: "stamina", descs: ["You get easily tired from physical activity, you'll frequently need time to rest and catch your breath.","","Your stamina is higher than average, you could run a mile without breaking a sweat.","Your stamina is inexhaustible, you could easily keep going for days."]},
 {attribname: "dexterity", descs: ["You're kinda clumsy at times, but in an adorable way.","","You're nimble and light on your feet, your movements are graceful and precise.","You're extremely dexterous and flexible, you move with unmatched grace and your reflexes are swift as lightning."]},
-{attribname: "eyesight", descs: ["You're rather short sighted. You'll need to wear glasses.","","You have perfect vision, you'll be able to see objects clearly from miles away."]},
+{attribname: "eyesight", descs: ["You descend into something else as your eyesight worsens, your glasses become thicker and you feel a new kind of change. You laugh with a little snort as braces form in your mouth and you stand awkwardly. Your glasses betray your new shame, you're a big giant nerd.","You're rather short sighted. You'll need to wear glasses.","","You have perfect vision, you'll be able to see objects clearly from miles away."]},
 {attribname: "constitution", descs: ["","You're more hardy than normal, you get sick less often and recover faster.","You'll always have perfect health, age much slower, and are immune to all illnesses and diseases."]},
 {attribname: "intelligence", descs: ["","You're quick-witted, have a good memory, and often catch the little details others might miss","You're easily a genius, you have an eidetic memory, and you're capable of recognizing patterns and drawing deductions that no one else can."]},
 {attribname: "charisma", descs: ["You are kind of shy and socially awkward, finding it more difficult to approach or talk to others, especially unfamiliar people.","","You're generally likable and good with people, socializing comes naturally to you.","You're a social butterfly. Wherever you go, you'll find that everyone adores and respects you."]},
@@ -96,7 +96,9 @@ var configAttribDescs = [
 {attribname: "sleepy", descs: ["","You need more sleep than normal. You may find yourself dozing off without noticing."]},
 {attribname: "ditzy", descs: ["","You're kind of scatterbrained at times. You get distracted easily and find it hard to focus for long.","You are a completely bimbo. You can't remember anything complicated, do basic math, or read anything above a certain level. Good thing you're pretty."]},
 {attribname: "noisy", descs: ["","You're can't help but whimper and moan when pleasured. It'll be impossible for you to stay quiet when you orgasm."]},
-{attribname: "denial", descs: ["","Whenever you're about to orgasm there's a 10% chance you'll instead be unable to cum for the next hour. You'll feel good but you won't be able to get over the edge, which will leave you horny and frustrated.","Whenever you're about to orgasm there's a 30% chance you'll instead be unable to cum for the next 2 hours. You'll feel good but you won't be able to get over the edge, which will leave you horny and frustrated."]},
+{attribname: "denial", descs: ["","You find it much harder to get off on your own. You cannot bring yourself over the edge by any means. You'll need to find someone else to help you out!","You can only cum when directly ordered to by someone else, right as you reach your peak. Even curse-induced trigger words need to be repeated twice.","You can only climax when ordered to right as you reach your peak by someone you brought to orgasm in the last half hour. In these circumstances, that person can also order you to have a ruined orgasm or to edge yourself supernaturally intensely."]},
+{attribname: "headpats", descs: ["","You are strongly emotionally affected by headpats and honest praise for your actions.","You are addicted to headpats and honest praise for your actions. They are not only deeply emotionally satisfying, but also bring a sort of relaxed physical pleasure which lasts for hours. Multiple occurences will compound into a euphric, almost trance-like state."]},
+{attribname: "polycule", descs: ["","You love group sex. The thought of multiple people fucking together greatly excites you, and being seen having sex by someone who shares your pleasure is a turn-on. Polyamorous or shared relationships become emotionally desirable. Harems, orgies or simple threesomes are far more sexually fulfilling than monogamous sex."]},
 {attribname: "palette swap", descs: ["",""]},
 {attribname: "name change", descs: ["",""]},
 ];
@@ -119,7 +121,7 @@ var configChangeImgs = [ //used to show icons for attribute at this level
 {attribname: "strength", imgsM:["enfeebledM.jpg","strengthM.jpg"], imgsF:["enfeebledF.jpg","strengthF.jpg"]},
 {attribname: "stamina", imgsM:["enervatedM.jpg","staminaM.jpg"], imgsF:["enervatedF.jpg","staminaF.jpg"]},
 {attribname: "dexterity", imgsM:["clumsyM.jpg","dexterityM.jpg"], imgsF:["clumsyF.jpg","dexterityF.jpg"]},
-{attribname: "eyesight", imgsM:["eyesightM.jpg","eyesight.jpg"], imgsF:["eyesightF.jpg","eyesight.jpg"]},
+{attribname: "eyesight", imgsM:["nerdM.jpg","eyesightM.jpg","eyesight.jpg"], imgsF:["nerdF.jpg","eyesightF.jpg","eyesight.jpg"]},
 {attribname: "constitution", imgs:["constitution.jpg"]},
 {attribname: "intelligence", imgs:["intelligence.jpg"]},
 {attribname: "charisma", imgsM:["wallflowerM.jpg","charisma.jpg"], imgsF:["wallflowerF.jpg","charisma.jpg"]},
@@ -168,6 +170,8 @@ var configChangeImgs = [ //used to show icons for attribute at this level
 {attribname: "ditzy", imgsM:["ditzyM.jpg"], imgsF:["ditzyF.jpg","bimbo.jpg"]},
 {attribname: "noisy", imgs:["noisy.jpg"]},
 {attribname: "denial", imgs:["denial.jpg"]}
+{attribname: "headpats", imgsM:["HeadpatsM.jpg"], imgsF:["HeadpatsF.jpg"]},
+{attribname: "polycule", imgs:["Polycule1.jpg"]},
 ];
 
 
@@ -233,6 +237,8 @@ var configEffects = [
 {category: "CursedTransformation", effectname: "Palette Swap", img:"paletteswap.jpg", desc: "<span style='color:yellow'><em>\"Red, Yellow, Green and Blue. Here's some colors just for you.\"</em></span><br/><br/><span style='float:right'>As the words form, a dazzling wave of colors ripples through the air, your hair and eyes shift in color.</span><br/><br/><span style='color:lime'>(Palette Swap!)</span>",requiresattribnotmax:"palette swap"},
 {category: "CursedTransformation", effectname: "Name Change", img:"namechange.jpg", desc: "<span style='color:yellow'><em>\"The words that others will soon repeat, a rose by any name would smell as sweet.\"</em></span><br/><br/><span style='float:right'>As the words form, the air seems to ripple and shift for a moment.</span><br/><br/><span style='color:lime'>(Name Change!)</span>",requiresattribnotmin:"gender", requiresattribnotmax:"name change",randwt:4},
 {category: "CursedTransformation", effectname: "Bad Luck", img:"none", desc: "<span style='color:yellow'><em>\"At the wrong place, at the wrong time, slip of the fingers, caught in the crime\"</em></span><br/><br/><span style='float:right'>As the words form, the air seems to ripple and shift for a moment.</span><br/><br/><span style='color:lime'>(Bad Luck!)</span>",requiresattribnotmin:"luck"},
+{category: "CursedTransformation", effectname: "Headpats", img:"none", desc: "<span style='color:yellow'><em>\"It's so good to feel valued, and to be praised for things you did!\"</em></span><br/><br/><span style='float:right'>As the words form, you feel your scalp tingle and shiver.</span><br/><br/><span style='color:lime'>(Headpats!!)</span>",requiresattribnotmin:"gender",requiresattribnotmax:"headpats"},
+{category: "CursedTransformation", effectname: "Polycule", img:"none", desc: "<span style='color:yellow'><em>\"The more the merrier! Be it in love, sex, or desire, more logs will light a larger fire!\"</em></span><br/><br/><span style='float:right'>As the words form, a slight tingle runs through you, like a thousand fingers stroking your skin.</span><br/><br/><span style='color:lime'>(Polycule!)</span>",requiresattribnotmin:"gender",requiresattribnotmax:"polycule"},
 
 ];
 
