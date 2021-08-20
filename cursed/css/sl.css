@@ -15,10 +15,19 @@
 }
 
 @font-face {
-    font-family: 'custfont';
-    src: local(Tahoma);
+    font-family: 'helios';
+    src: url('../fonts/Helios_Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'custfont';
+    src: local(Georgia);
+    font-weight: normal;
+    font-style: normal;
+    font-size-adjust: 0.75em;
 
 }
 
@@ -105,19 +114,21 @@ footer {
     position: relative;
 }
 
-
-
-.screen1_footer {
+.screen1_footer, heartbeat {
 float: middle;
 position: relative;
  text-align: center;
  vertical-align: middle;
  margin:auto;
- top: 300px;
+ top: 330px;
+-webkit-animation: heartbeat 5s ease-in-out infinite both;
+        animation: heartbeat 5s ease-in-out infinite both;
 }
+
+
 .startBtn {
 	width: 300px;
-	height: 110px;
+	height: 107px;
 	background:url(../img/play_bg.png) no-repeat;	
 	cursor: default;
 	display: block;	
@@ -125,10 +136,11 @@ position: relative;
     text-align: center;
 	margin:auto;
 	padding-top: 20px;
-	font-family: 'the_kings_of_the_houseregular';
-	font-size: 45px;
-	color: #ffcc00;
+	font-family: 'helios';
+	font-size: 60px;
+	color: #ffffff;
 }
+
 .startBtn span{  z-index: 999;  position: relative;}
 
 
@@ -141,6 +153,7 @@ position: relative;
 	background:url(../img/screen2.jpg) no-repeat;
 	position: relative;
 	overflow: hidden;
+    padding-top: 20px;
 }
 
 #instructions{
@@ -151,7 +164,7 @@ position: relative;
 	padding-top: 40px;
 }
 #instructions h2{
-  font-family: 'the_kings_of_the_houseregular';
+  font-family: 'helios';
   font-size: 20px;
   text-align:center;
   text-transform: uppercase;
@@ -188,7 +201,7 @@ button#play {
   padding: 5px 15px;
   float: right;
   margin-right: 65px;
-   font-family: 'the_kings_of_the_houseregular';
+   font-family: 'helios';
   font-size: 18px;
   cursor: default;
   position: absolute;
@@ -259,7 +272,7 @@ font-size: 20px;
     width: 400px;
     margin: 0 auto;
     position: relative;
-    padding-top: 30px;
+    padding-top: 25px;
 }
 
 .Level-Theme h3 {
@@ -267,10 +280,9 @@ font-size: 20px;
     height: 115px;    
     line-height: 100px;    
     color: #fff;    
-	
     font-weight: normal;
-    font-family: 'the_kings_of_the_houseregular';    
-    font-size: 33px;    
+    font-family: 'helios';    
+    font-size: 30px;    
     background: url(../img/selectLevel-bg.png);    
 	display: block;    
     padding: 0px;    
@@ -288,9 +300,9 @@ font-size: 20px;
 .Level-Theme li {
     list-style-type: none;
     text-align: center;
-    font-family: 'the_kings_of_the_houseregular';
+    font-family: 'helios';
     margin: 0px auto;
-    font-size: 25px;    
+    font-size: 22px;    
     background: url(../img/Level-bg.png) no-repeat;    
     line-height: 140px;        
     display: block;    
@@ -372,7 +384,7 @@ div#dice {
     line-height: 190px;
     color: yellow;
     font-size: 20px;
-    font-family: 'the_kings_of_the_houseregular';
+    font-family: 'helios';
     cursor: default;
 }
 .dice {
@@ -614,7 +626,7 @@ width: 104px;
 background: url(../img/submitBtn.png) no-repeat;
 height: 50px;
 vertical-align: middle;
-font-family: 'the_kings_of_the_houseregular';
+font-family: 'helios';
 font-weight: normal;
 color: #fff;
 border:0px;
@@ -881,7 +893,7 @@ display:inline;
   text-align: center;
   background: #F4F408;
   padding: 7px 10px;
-  font-family: 'the_kings_of_the_houseregular';
+  font-family: 'helios';
   font-size: 18px;
   cursor: default;
   color: #000;
@@ -895,7 +907,7 @@ display:inline;
   text-align: center;
   background: #F4F408;
   padding: 7px 10px;
-  font-family: 'the_kings_of_the_houseregular';
+  font-family: 'helios';
   font-size: 18px;
   cursor: default;
   color: #000;
@@ -1005,4 +1017,79 @@ body.spinnerprogress.done .progress {
 
 .mauto {
 	margin:  auto;
+}
+
+/**
+ * ----------------------------------------
+ * animation stuff
+ * ----------------------------------------
+ */
+
+@-webkit-keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+}
+@keyframes heartbeat {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  10% {
+    -webkit-transform: scale(0.91);
+            transform: scale(0.91);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  17% {
+    -webkit-transform: scale(0.98);
+            transform: scale(0.98);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
+  33% {
+    -webkit-transform: scale(0.87);
+            transform: scale(0.87);
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+  }
+  45% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -webkit-animation-timing-function: ease-out;
+            animation-timing-function: ease-out;
+  }
 }
