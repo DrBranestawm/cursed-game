@@ -102,7 +102,7 @@ playertoken.lastrolled = 0;
 playertoken.lastselecteditem = 0;
 
 var minheight = 90;
-var minage = 16;
+var minage = 12;
 
 var showtfeffect = false;
 var tfcounter = 0;
@@ -842,9 +842,9 @@ function ApplyEffect(seldat)
 			case "Age Regression": PrepareTF();attribute="age"; 
 			playertoken.stats["age"] -= 2;
 			playertoken.stats["age"] = playertoken.stats["age"]<minage?minage:playertoken.stats["age"];
-			if(playertoken.stats["age"]<18)
+			if(playertoken.stats["age"]<16)
 			{
-				playertoken.stats["height"] -= 24;
+				playertoken.stats["height"] -= 20;
 				playertoken.stats["height"] = playertoken.stats["height"]<minheight?minheight:playertoken.stats["height"];
 			}
 			break;
