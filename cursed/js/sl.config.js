@@ -330,7 +330,7 @@ var playerTemplates = [
 "hair length":0,
 "physique":0,
 "ass size":0,},
-{"name":"John","last name":"Smith","age":24,"height":180,"gender":0,"hair color":"Brown","eye color":"Hazel",
+{"name":"Jenny","last name":"Rose","age":20,"height":180,"gender":1,"hair color":"Blonde","eye color":"Blue",
 "desc":"", //hidden sandbox character, do not remove
 "gear":[],
 "strength":1,
