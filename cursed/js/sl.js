@@ -91,6 +91,7 @@ playertoken.stats = {
 "headpats":0,
 "polycule":0,
 "bondage lover":0,
+"lewd crest":0,
 
 "palette swap":0,
 "name change":0
@@ -865,6 +866,7 @@ function ApplyEffect(seldat)
 			case "Headpats": PrepareTF();attribute="headpats"; adjust_attrib(attribute,1); break;
 			case "Polycule": PrepareTF();attribute="polycule"; adjust_attrib(attribute,1); break;
 			case "Bondage Lover": PrepareTF();attribute="bondage lover"; adjust_attrib(attribute,1); break;
+			case "Lewd Crest": PrepareTF();attribute="lewd crest"; adjust_attrib(attribute,1); break;
 
 			case "Palette Swap": 
 			PrepareTF();
@@ -1281,6 +1283,7 @@ function stringify_player(verbose)
 		arr.push("headpats");
 		arr.push("polycule");
 		arr.push("bondage lover");
+		arr.push("lewd crest");
 		
 		arr.push("strength");
 		arr.push("stamina");
