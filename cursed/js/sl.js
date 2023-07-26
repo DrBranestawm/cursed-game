@@ -90,6 +90,7 @@ playertoken.stats = {
 "denial":0,
 "headpats":0,
 "polycule":0,
+"bondage lover":0,
 
 "palette swap":0,
 "name change":0
@@ -99,7 +100,7 @@ playertoken.currentpos = 0;
 playertoken.lastrolled = 0;
 playertoken.lastselecteditem = 0;
 
-var minheight = 91;
+var minheight = 90;
 var minage = 16;
 
 var showtfeffect = false;
@@ -863,6 +864,7 @@ function ApplyEffect(seldat)
 			case "Bad Luck": PrepareTF();attribute="luck"; adjust_attrib(attribute,-10); break;
 			case "Headpats": PrepareTF();attribute="headpats"; adjust_attrib(attribute,1); break;
 			case "Polycule": PrepareTF();attribute="polycule"; adjust_attrib(attribute,1); break;
+			case "Bondage Lover": PrepareTF();attribute="bondage lover"; adjust_attrib(attribute,1); break;
 
 			case "Palette Swap": 
 			PrepareTF();
@@ -1278,6 +1280,7 @@ function stringify_player(verbose)
 		arr.push("denial");
 		arr.push("headpats");
 		arr.push("polycule");
+		arr.push("bondage lover");
 		
 		arr.push("strength");
 		arr.push("stamina");
