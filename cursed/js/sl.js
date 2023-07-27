@@ -101,7 +101,7 @@ playertoken.currentpos = 0;
 playertoken.lastrolled = 0;
 playertoken.lastselecteditem = 0;
 
-var minheight = 90;
+var minheight = 91;
 var minage = 16;
 
 var showtfeffect = false;
