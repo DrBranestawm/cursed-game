@@ -1,11 +1,10 @@
-# drbranestawm.github.io/cursed-game/cursed/
-
+# drbranestawm.github.io/cursed-game/
 Cursed Boardgame Interactive NSFWCYOA
 Originally Created by /u/chinesesilklanterns
 May 2020
 
-Forked, Cloaned, and Updated by Pirate Fairy
-August 2021
+Forked, Cloaned, and Updated by DrBranestawm
+July 2023
 
 License: You are free to use and redistribute this game, associated code and files entirely free of charge in a non-commercial setting, so long as proper attribution is given to the one and only chinesesilklanterns. 
 I do not own the copyright to the illustrated images in the 'icons' folder used in this game, they belong to various artists found online.
