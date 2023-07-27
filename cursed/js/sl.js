@@ -82,7 +82,7 @@ playertoken.stats = {
 "dependent":0,
 "fluid addiction":0,
 "lactation":0,
-"incontinence":0,
+//"incontinence":0,
 "hair removal":0,
 "sleepy":0,
 "ditzy":0,
@@ -853,7 +853,7 @@ function ApplyEffect(seldat)
 			case "Dependent": PrepareTF();attribute="dependent"; adjust_attrib(attribute,1); break;
 			case "Fluid Addiction": PrepareTF();attribute="fluid addiction"; adjust_attrib(attribute,1); break;
 			case "Lactation": PrepareTF();attribute="lactation"; adjust_attrib(attribute,1); break;
-			case "Incontinence": PrepareTF();attribute="incontinence"; adjust_attrib(attribute,1); break;
+			//case "Incontinence": PrepareTF();attribute="incontinence"; adjust_attrib(attribute,1); break;
 			case "Hair Removal": PrepareTF();attribute="hair removal"; adjust_attrib(attribute,1); break;
 			case "Sleepy": PrepareTF();attribute="sleepy"; adjust_attrib(attribute,1); break;
 			case "Ditzy": PrepareTF();attribute="ditzy"; adjust_attrib(attribute,1); break;
@@ -1274,7 +1274,7 @@ function stringify_player(verbose)
 		arr.push("dependent");
 		arr.push("fluid addiction");
 		arr.push("lactation");
-		arr.push("incontinence");
+		//arr.push("incontinence");
 		arr.push("hair removal");
 		arr.push("sleepy");
 		arr.push("ditzy");
