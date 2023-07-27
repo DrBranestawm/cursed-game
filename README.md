@@ -14,3 +14,4 @@ You may create derivative works, using all or parts of the files provided here, 
 Basically, if you share or modify this, be nice and credit me.
 
 Credit to the creator: chinesesilklanterns.
+Credit to the updater: Pirate Fairy
