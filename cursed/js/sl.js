@@ -861,7 +861,7 @@ function ApplyEffect(seldat)
 			case "Orgasm Denial": PrepareTF();attribute="denial"; adjust_attrib(attribute,1); break;
 			case "Clumsy": PrepareTF();attribute="dexterity"; adjust_attrib(attribute,-10); break;
 			case "Enervation": PrepareTF();attribute="stamina"; adjust_attrib(attribute,-10); break;
-			case "Glasses": PrepareTF();attribute="eyesight"; adjust_attrib(attribute,0); break;
+			case "Glasses": PrepareTF();attribute="eyesight"; adjust_attrib(attribute,1); break;
 			case "Bad Luck": PrepareTF();attribute="luck"; adjust_attrib(attribute,-10); break;
 			case "Headpats": PrepareTF();attribute="headpats"; adjust_attrib(attribute,1); break;
 			case "Polycule": PrepareTF();attribute="polycule"; adjust_attrib(attribute,1); break;
