@@ -141,7 +141,7 @@ var configChangeImgs = [ //used to show icons for attribute at this level
 {attribname: "increased fluids", imgsM:["increasedfluidsM.jpg"], imgsF:["increasedfluidsF.jpg"]},
 {attribname: "always ready", imgsM:["alwaysreadyM.jpg"], imgsF:["alwaysreadyF.jpg"]},
 {attribname: "enhanced orgasms", imgsM:["enhancedM1.jpg","enhancedM1.jpg","enhancedM2.jpg"], imgsF:["enhancedF1.jpg","enhancedF1.jpg","enhancedF2.jpg"]},
-{attribname: "submissiveness", imgs:["submissive.jpg"]},
+{attribname: "submissiveness", imgs:["","submissive1.jpg","submissive2.jpg","submissive3.jpg"]},
 {attribname: "hypnotic susceptibility",imgsM:["hypnoM.jpg"], imgsF:["hypnoF.jpg"]},
 {attribname: "multiple orgasms", imgs:["multipleorgasms.jpg"]},
 {attribname: "random orgasms", imgs:["randomorgasms.jpg"]},
@@ -243,7 +243,7 @@ var configEffects = [
 {category: "CursedTransformation", effectname: "Bad Luck", img:"none", desc: "<span style='color:yellow'><em>\"At the wrong place, at the wrong time, slip of the fingers, caught in the crime\"</em></span><br/><br/><span style='float:right'>As the words form, the air seems to ripple and shift for a moment.</span><br/><br/><span style='color:lime'>(Bad Luck!)</span>",requiresattribnotmin:"luck"},
 {category: "CursedTransformation", effectname: "Headpats", img:"none", desc: "<span style='color:yellow'><em>\"It's so good to feel valued, and to be praised for things you did!\"</em></span><br/><br/><span style='float:right'>As the words form, you feel your scalp tingle and shiver.</span><br/><br/><span style='color:lime'>(Headpats!!)</span>",requiresattribnotmin:"gender",requiresattribnotmax:"headpats"},
 {category: "CursedTransformation", effectname: "Polycule", img:"none", desc: "<span style='color:yellow'><em>\"The more the merrier! Be it in love, sex, or desire, more logs will light a larger fire!\"</em></span><br/><br/><span style='float:right'>As the words form, a slight tingle runs through you, like a thousand fingers stroking your skin.</span><br/><br/><span style='color:lime'>(Polycule!)</span>",requiresattribnotmin:"gender",requiresattribnotmax:"polycule"},
-{category: "CursedTransformation", effectname: "Bondage Lover", img:"none", desc: "<span style='color:yellow'><em>\"Lorem ipsum!\"</em></span><br/><br/><span style='float:right'>Dolor sid amed.</span><br/><br/><span style='color:lime'>(Bondage Lover!)</span>",requiresattribnotmin:"gender",requiresattribnotmax:"bondage lover"},
+{category: "CursedTransformation", effectname: "Bondage Lover", img:"none", desc: "<span style='color:yellow'><em>\"Lorem ipsum!\"</em></span><br/><br/><span style='float:right'>Dolor sit amet, consetetur sadipscing elitr.</span><br/><br/><span style='color:lime'>(Bondage Lover!)</span>",requiresattribnotmin:"gender",requiresattribnotmax:"bondage lover"},
 {category: "CursedTransformation", effectname: "Lewd Crest", img:"none", desc: "<span style='color:yellow'><em>\"Lorem ipsum!\"</em></span><br/><br/><span style='float:right'>As the words form, a slight tingle runs through you, and a crest forms on your abdomen.</span><br/><br/><span style='color:lime'>(Lewd Crest!)</span>",requiresattribnotmin:"gender",requiresattribnotmax:"lewd crest"},
 
 ];
