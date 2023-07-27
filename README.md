@@ -1,4 +1,4 @@
-# pirate-fairy.github.io
+# drbranestawm.github.io/cursed-game/cursed/
 
 Cursed Boardgame Interactive NSFWCYOA
 Originally Created by /u/chinesesilklanterns
