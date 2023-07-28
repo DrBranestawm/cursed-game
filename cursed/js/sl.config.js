@@ -336,7 +336,7 @@ var playerTemplates = [
 "strength":1,
 "stamina":1,
 "dexterity":1,
-"eyesight":0,
+"eyesight":2,
 "constitution":0,
 "intelligence":0,
 "charisma":1,
