@@ -1,5 +1,5 @@
 /*
-  Cursed Boardgame v.4 
+  Cursed Boardgame v.4.5 
   Updated by Blondeh
   August 2021
 
@@ -116,7 +116,7 @@ var configChangeDescs = [ //used to describe detailed changing to this level
 {attribname: "triggered orgasms", descs:["","You hear a voice whispering a word, and your body tenses up as a warmth builds. You try to resist, but you're soon quivering uncontrollably as an orgasm hits you."]},
 {attribname: "triggered arousal", descs:["","You hear a voice whispering a word, and suddenly you're feeling flushed and horny, an intense arousal rapidly warming your loins."]},
 {attribname: "easily aroused", descsM:["","As the change washes over you, you feel your cock stirring and slowly getting stiff and erect."],descsF:["","As the change washes over you, you feel your nipples become a little hard as your pussy begins to wet itself."]},
-{attribname: "incontinence", descs:["","Your body starts to change invisibly. Your bladder shrinks and you lose sensitivity down there.","Your mind draws a blank when you try to remember you need to get to the bathroom to go.","Why is your stomach rumbling? Oh no, this is urgent.","You feel your body tense and your knees bend into a familar squat.","Why are you like this? Why can't you control yourself like other people.","You feel your knees bend and you release. It's a good thing that pillowy softness is there to help."]}
+//{attribname: "incontinence", descs:["","Your body starts to change invisibly. Your bladder shrinks and you lose sensitivity down there.","Your mind draws a blank when you try to remember you need to get to the bathroom to go.","Why is your stomach rumbling? Oh no, this is urgent.","You feel your body tense and your knees bend into a familar squat.","Why are you like this? Why can't you control yourself like other people.","You feel your knees bend and you release. It's a good thing that pillowy softness is there to help."]}
 ];
 
 var configChangeImgs = [ //used to show icons for attribute at this level
