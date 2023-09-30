@@ -364,7 +364,7 @@ var items = [
 //{name:"Juliet's Amulet", desc:"A tarnished brass amulet set with a pink gemstone.", effect:"When equipped, transforms you into a girl named Juliet.",  img:"", usable:true, cursed:true, isconsumed:false, multiuse:false, stacks:false},
 //{name:"Mood Ring", desc:"A plain ring that seems to be stuck on the color red.", effect:"When equipped, this ring puts you in the mood... by making you horny.",  img:"", usable:true, cursed:true, isconsumed:false, multiuse:false, stacks:false},
 //single use useful, no stack
-//{name:"Blue Loaded Die", desc:"A six sided plastic die.", effect:"When equipped, adds a -1 modifier to all future dice rolls (except 1s).",  img:"", usable:true, cursed:false, isconsumed:false, multiuse:false, stacks:false},
+{name:"Blue Loaded Die", desc:"A six sided plastic die.", effect:"When equipped, adds a -1 modifier to all future dice rolls (except 1s).",  img:"", usable:true, cursed:false, isconsumed:false, multiuse:false, stacks:false},
 //{name:"Green Loaded Die", desc:"A six sided plastic die.", effect:"When equipped, adds a +1 modifier to all future dice rolls (except 6s).",  img:"", usable:true, cursed:false, isconsumed:false, multiuse:false, stacks:false},
 //{name:"Reset Button", desc:"A big red button labelled 'RESET'", effect:"When activated, Teleports you back to square one.",  img:"", usable:true, cursed:false, isconsumed:false, multiuse:false, stacks:false},
 //{name:"Disguise Kit", desc:"A box filled with vibrantly colored powders.", effect:"When equipped, gives you brown hair and eyes.",  img:"", usable:true, cursed:false, isconsumed:true, multiuse:true, stacks:true},
