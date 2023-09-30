@@ -1136,7 +1136,14 @@ function useinvitem()
 			document.getElementById('shopicon').onclick = "";
 			setTimeout(function()
 			{
+				if("luck" != -10)
+				{
 				MovePlayer(6);
+				}
+				else
+				{
+				MovePlayer(1);	
+				}
 			},1000);
 		break;
 	}
