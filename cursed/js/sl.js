@@ -101,7 +101,7 @@ playertoken.currentpos = 0;
 playertoken.lastrolled = 0;
 playertoken.lastselecteditem = 0;
 
-var minheight = 91;
+var minheight = 90;
 var minage = 16;
 
 var showtfeffect = false;
@@ -322,7 +322,10 @@ var rolldice = function()
 		randomNum = 1;
 	}
 	//randomNum = 199;//((playertoken.currentpos == "Start")?1:0);
-	
+	if("luck" == -10)
+	{
+		randomNum = Math.floor(Math.random() * 3) - 3;
+	}
 	console.log('dice rolled: ' + randomNum);
 	document.getElementsByClassName('dice')[0].className = "dice digit" + randomNum;
 	setTimeout(function()
@@ -1164,7 +1167,7 @@ function selectsandbox(ele)
 	+"Age: <input type=number id=iage value=18 min=16 max=80><br/>"
 	+"Height (cm): <input type=number id=iheight value=160 min="+minheight+" max=200><br/>"
 	+"Gender: <select id=igender><option value=1>F</option> <option value=0>M</option></select><br/>"
-	+"Orientation: <select id=iori><option value=1>Prefers M</option> <option value=0>Prefers F</option> <option value=1>Prefers M</option><option value=2>Bisexual</option></select><br/>"
+	+"Orientation: <select id=iori><option value=1>Prefers M</option> <option value=0>Prefers F</option> <option value=2>Bisexual</option></select><br/>"
 	+"Hair Color: <input type=text id=ihairc value='Blonde' maxlength=15 size=8><br/>"
 	+"Eye Color: <input type=text id=ieyec value='Blue' maxlength=15 size=8><br/>"
 	+"Infinite Silver Coins: <input type=checkbox id=iinfsilver>"
