@@ -316,7 +316,6 @@ var rolldice = function()
 	
 	var randomNum;
 	
-	randomNum = Math.floor(Math.random() * 6) + 1;
 	if(loadeddice)
 	{
 		randomNum = 1;
@@ -325,6 +324,10 @@ var rolldice = function()
 	if("luck" == -10)
 	{
 		randomNum = Math.floor(Math.random() * 3) - 3;
+	}
+	else
+	{
+		randomNum = Math.floor(Math.random() * 6) + 1;
 	}
 	console.log('dice rolled: ' + randomNum);
 	document.getElementsByClassName('dice')[0].className = "dice digit" + randomNum;
