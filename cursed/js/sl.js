@@ -327,14 +327,16 @@ var rolldice = function()
 	setTimeout(function()
 	{
 		if("luck" != -10)
+		{
 		document.getElementsByClassName('dice')[0].className += "static";
 		playertoken.lastrolled = randomNum;		
-		{
 		MovePlayer(randomNum);
 		}
 		else
 		{
-		MovePlayer(randomNum -3);	
+		document.getElementsByClassName('dice')[0].className += "static";
+		playertoken.lastrolled = randomNum -3;		
+		MovePlayer(randomNum);	
 	}, 1000);
 }
 
