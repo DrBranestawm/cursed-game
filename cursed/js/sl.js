@@ -321,21 +321,20 @@ var rolldice = function()
 		randomNum = 1;
 	}
 	//randomNum = 199;//((playertoken.currentpos == "Start")?1:0);
-	if("luck" == -10)
-	{
-		randomNum = Math.floor(Math.random() * 3) - 3;
-	}
-	else
-	{
-		randomNum = Math.floor(Math.random() * 6) + 1;
-	}
+	randomNum = Math.floor(Math.random() * 6) + 1;
 	console.log('dice rolled: ' + randomNum);
 	document.getElementsByClassName('dice')[0].className = "dice digit" + randomNum;
 	setTimeout(function()
 	{
+		if("luck" != -10)
 		document.getElementsByClassName('dice')[0].className += "static";
 		playertoken.lastrolled = randomNum;		
-		MovePlayer(randomNum);		
+		{
+		MovePlayer(randomNum);
+		}
+		else
+		{
+		MovePlayer(randomNum -3);	
 	}, 1000);
 }
 
@@ -839,7 +838,7 @@ function ApplyEffect(seldat)
 			case "No Gag Reflex": PrepareTF();attribute="no gag reflex"; adjust_attrib(attribute,1); break;
 			case "Oral Lover": PrepareTF();attribute="oral lover"; adjust_attrib(attribute,1); break;
 			case "Anal Lover": PrepareTF();attribute="anal lover"; adjust_attrib(attribute,1); break;
-			case "Infertile": PrepareTF();attribute="infertile"; adjust_attrib("very fertile",-1);adjust_attrib(attribute,1); break;
+			//case "Infertile": PrepareTF();attribute="infertile"; adjust_attrib("very fertile",-1);adjust_attrib(attribute,1); break;
 			case "Very Fertile": PrepareTF();attribute="very fertile"; adjust_attrib("infertile",-1); adjust_attrib(attribute,1); break;
 			case "Pent Up": PrepareTF();attribute="pent up"; adjust_attrib(attribute,1); break;
 			case "Masochistic": PrepareTF();attribute="masochistic"; adjust_attrib(attribute,1); break;
@@ -864,7 +863,7 @@ function ApplyEffect(seldat)
 			case "Sleepy": PrepareTF();attribute="sleepy"; adjust_attrib(attribute,1); break;
 			case "Ditzy": PrepareTF();attribute="ditzy"; adjust_attrib(attribute,1); break;
 			case "Noisy": PrepareTF();attribute="noisy"; adjust_attrib(attribute,1); break;
-			case "Orgasm Denial": PrepareTF();attribute="denial"; adjust_attrib(attribute,1); break;
+			//case "Orgasm Denial": PrepareTF();attribute="denial"; adjust_attrib(attribute,1); break;
 			case "Clumsy": PrepareTF();attribute="dexterity"; adjust_attrib(attribute,-10); break;
 			case "Enervation": PrepareTF();attribute="stamina"; adjust_attrib(attribute,-10); break;
 			case "Glasses": PrepareTF();attribute="eyesight"; adjust_attrib(attribute,-10); break;
@@ -886,7 +885,7 @@ function ApplyEffect(seldat)
 			case "Name Change": 
 			PrepareTF();
 			attribute=""; adjust_attrib("name change",1);
-			var femname = ["Jennifer","Jessica","Megan","Sarah","Samantha","Amanda","Nicole","Danielle","Sarah","Emily","Chloe","Brooke","Brittany","Fairess","Dawn"];
+			var femname = ["Jennifer","Jessica","Megan","Lilly","Samantha","Amanda","Stella","Danielle","Sarah","Emily","Lola","Brooke","Brittany","Fairess","Dawn"];
 			playertoken.stats["name"] = femname[Math.floor(Math.random() * femname.length)];
 			extrastr += "<br/><br/>Your name is now "+playertoken.stats["name"]+ " - you just know this instinctively. It feels strange to think of yourself by any other name.";
 			break;
