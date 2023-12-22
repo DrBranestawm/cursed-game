@@ -336,7 +336,8 @@ var rolldice = function()
 		{
 		document.getElementsByClassName('dice')[0].className += "static";
 		playertoken.lastrolled = randomNum -3;		
-		MovePlayer(randomNum);	
+		MovePlayer(randomNum);
+		}
 	}, 1000);
 }
 
