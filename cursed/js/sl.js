@@ -1,7 +1,7 @@
 /*
-  Cursed Boardgame v.4 
-  Updated by Blondeh
-  August 2021
+  Cursed Boardgame v.4.5 
+  Updated by DrBranestawm
+  December 2023
 
   Cursed Boardgame Interactive NSFWCYOA
   Created by /u/chinesesilklanterns
