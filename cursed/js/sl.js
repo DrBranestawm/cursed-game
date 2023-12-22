@@ -1,6 +1,7 @@
 /*
   Cursed Boardgame v.4.5 
   Updated by DrBranestawm
+  https://github.com/DrBranestawm/cursed-game/
   December 2023
 
   Cursed Boardgame Interactive NSFWCYOA
